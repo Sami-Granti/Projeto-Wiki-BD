@@ -12,3 +12,5 @@ Windows (x86, 32-bit), MSI Installer	8.0.41	2.1M
 
 Instale as dependências necessárias (Rodar no CMD):
 npm install express mysql
+
+Para rodar o site, só inicializar o index.html.
