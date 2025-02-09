@@ -1,3 +1,7 @@
+CREATE DATABASE bloons_db;
+
+USE bloons_db;
+
 CREATE TABLE Bloons (
     NomePK VARCHAR(50) PRIMARY KEY,
     Tier VARCHAR(20) NOT NULL
