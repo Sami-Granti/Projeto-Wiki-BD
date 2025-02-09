@@ -14,7 +14,7 @@ npm install express
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-No arquivo server.js onde mostra-se seus dados, altere os valores de acordo com seus dados do workbench do MySQL connection e a database que irá usar.
+No arquivo server.js onde mostra-se seus dados, altere os valores de acordo com seus dados do workbench do MySQL connection e o banco de dados que irá usar.
 
   host: 'localhost',
 
@@ -27,8 +27,12 @@ No arquivo server.js onde mostra-se seus dados, altere os valores de acordo com 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Iniciar o comando na pasta backend:
+
 node server.js
 
-Criar as tabelas, importando as querys da pasta SQL_script
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Criar as tabelas, importando as querys da pasta SQL_script no connection do MySql Workbench.
+
 
 Para rodar o site, só inicializar o index.html.
