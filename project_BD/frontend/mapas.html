@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <h2>Links Úteis</h2>
+            <ul>    
+                <li><a href="index.html">Início</a></li>
+                <li><a href="macacos.html">Macacos</a></li>
+                <li><a href="bloons.html">Bloons</a></li>
+                <li><a href="mapas.html">Mapas</a></li>
+                <li><a href="conta.html">Conta</a></li>
+            </ul>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+            <h1>Lista de Mapas</h1>
+
+            <!-- Formulário para adicionar um novo mapa -->
+            <div class="formulario-adicionar">
+                <h2>Adicionar Novo Mapa</h2>
+                <form id="formAdicionarMapa">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" required>
+
+                    <label for="dificuldade">Dificuldade:</label>
+                    <input type="text" id="dificuldade" required>
+
+                    <label for="lanes">Lanes:</label>
+                    <input type="text" id="lanes" required>
+
+                    <button type="submit">Adicionar</button>
+                </form>
+            </div>
+
+            <!-- Tabela de mapas -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Dificuldade</th>
+                        <th>Lanes</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-body"></tbody>
+            </table>
+
+            <!-- Importa o script -->
+            <script src="js/scriptMapas.js"></script>
+        </main>
+    </div>
+</body>
+</html>

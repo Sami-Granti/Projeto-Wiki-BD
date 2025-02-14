@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <h2>Links Úteis</h2>
+            <ul>    
+                <li><a href="index.html">Início</a></li>
+                <li><a href="macacos.html">Macacos</a></li>
+                <li><a href="bloons.html">Bloons</a></li>
+                <li><a href="mapas.html">Mapas</a></li>
+                <li><a href="conta.html">Conta</a></li>
+            </ul>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+            <h1>Lista de Contas</h1>
+
+            <!-- Formulário para adicionar uma nova conta -->
+            <div class="formulario-adicionar">
+                <h2>Adicionar Nova Conta</h2>
+                <form id="formAdicionarConta">
+                    <label for="nome_usuario">Nome de Usuário:</label>
+                    <input type="text" id="nome_usuario" required>
+            
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" required>
+            
+                    <label for="perfil">Perfil (Imagem):</label>
+                    <input type="file" id="perfil" required>
+            
+                    <!-- Adicionando uma classe para espaçamento -->
+                    <div class="espacamento"></div>
+            
+                    <label for="conta_cs_id">ID de CS:</label>
+                    <input type="text" id="conta_cs_id">
+            
+                    <label for="conta_macaco_nome">Nome do Macaco:</label>
+                    <input type="text" id="conta_macaco_nome">
+            
+                    <label for="conta_mapa_nome">Nome do Mapa:</label>
+                    <input type="text" id="conta_mapa_nome">
+            
+                    <button type="submit">Adicionar</button>
+                </form>
+            </div>
+
+            <!-- Tabela de contas -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome de Usuário</th>
+                        <th>Senha</th>
+                        <th>Perfil</th>
+                        <th>ID de CS</th>
+                        <th>Macaco</th>
+                        <th>Mapa</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-body"></tbody>
+            </table>
+
+            <!-- Importa o script -->
+            <script src="js/scriptConta.js"></script>
+        </main>
+    </div>
+</body>
+</html>
